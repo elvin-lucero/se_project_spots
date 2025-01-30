@@ -4,3 +4,26 @@
   align-items: center;
   background-color: #fcf5e5;
 }
+
+.content__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1280px;
+  height: 970px;
+  top: 310px;
+  left: 80px;
+  border-bottom: 1px solid #212121;
+  padding-bottom: 40px;
+  gap: 20px;
+}
+
+.content__card {
+  width: 413px;
+  height: 445px;
+}
+
+.content__card_image {
+  width: 413px;
+  height: 413px;
+}
