@@ -24,6 +24,6 @@
 }
 
 .content__card_image {
-  width: 413px;
-  height: 413px;
+  max-width: 413px;
+  max-height: 413px;
 }
