@@ -7,6 +7,8 @@
 
 .profile__avatar {
   margin-right: 20px;
+  height: 190px;
+  width: 190px;
 }
 
 .profile__column {
@@ -47,3 +49,16 @@
   align-self: flex-end;
   cursor: pointer;
 }
+
+@media screen and (max-width: 627px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    justify-content: center;
+  }
+
+  .profile__avatar {
+    margin-right: 0;
+    height: 80px;
+    width: 80px;
+  }
