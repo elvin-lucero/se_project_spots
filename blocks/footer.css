@@ -1,4 +1,9 @@
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  color: #212121b2; /* #212121 with opacity set to 70% */
 }

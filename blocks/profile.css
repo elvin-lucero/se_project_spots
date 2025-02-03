@@ -29,6 +29,8 @@
   margin-top: auto;
   background-color: transparent;
   border: none;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .profile__add-button {
@@ -37,4 +39,11 @@
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 149px;
+  height: 52px;
+  gap: 8px;
+  border-radius: 8px;
+  align-self: flex-end;
+  cursor: pointer;
 }

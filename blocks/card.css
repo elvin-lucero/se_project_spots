@@ -1,11 +1,16 @@
 .card {
   width: 413px;
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__image {
   width: 413px;
   height: 413px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .card__content {
@@ -16,6 +21,9 @@
 
 .card__title {
   margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .card__like-button {
@@ -25,4 +33,5 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
 }

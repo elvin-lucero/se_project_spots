@@ -1,6 +1,6 @@
 .cards {
-  padding-top: 20px;
-  border-bottom: 1px solid rgba(33, 33, 33, 0.4); /* #212121 with opacity set to 40%*/
+  padding: 20px 0 40px;
+  border-bottom: 1px solid #21212166; /* #212121 with opacity set to 40%*/
 }
 
 .cards__list {
