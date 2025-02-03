@@ -1,0 +1,23 @@
+.profile {
+}
+
+.profile__avatar {
+}
+
+.profile__name {
+}
+
+.profile__description {
+}
+
+.profile__edit-button {
+  display: flex;
+  align-items: center;
+}
+
+.profile__add-button {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
