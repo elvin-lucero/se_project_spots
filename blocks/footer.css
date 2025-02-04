@@ -6,4 +6,6 @@
 
 .footer__text {
   color: #212121b2; /* #212121 with opacity set to 70% */
+  margin: 0;
+  padding: 60px 0;
 }
