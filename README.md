@@ -14,11 +14,12 @@ This project is made so all the elements are displayed correctly on popular scre
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 
-**Images**
+**My Project**
+
+- [Link to my project](https://elvin-lucero.github.io/se_project_spots/)
+
+**Preview Images**
 
 ![Spots Desktop](./images/previews/spots-desktop.jpg)
 ![Spots Mobile](./images/previews/spots-mobile.jpg)
 ![Spots Mobile with Text Overflow](./images/previews/spots-mobile-text.jpg)
-
-**My Project**
-[Link to my project](https://elvin-lucero.github.io/se_project_spots/)
