@@ -19,6 +19,10 @@ This project is made so all the elements are displayed correctly on popular scre
 
 - [Link to my project](https://elvin-lucero.github.io/se_project_spots/)
 
+**Video Preview**
+
+- [Follow along with me as I go over my project](https://drive.google.com/file/d/1e-6UU40-C7CXX4Duka3xMAFrixL8XRkw/view?usp=drive_link)
+
 **Preview Images**
 
 ![Spots Desktop](./images/previews/spots-desktop.jpg)
