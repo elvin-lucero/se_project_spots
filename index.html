@@ -46,6 +46,7 @@
           <ul class="cards__list">
             <template id="card-template">
               <li class="card">
+                <button type="button" class="card__delete-btn"></button>
                 <img src="" alt="" class="card__image" />
                 <div class="card__content">
                   <h2 class="card__title"></h2>
@@ -91,7 +92,11 @@
 
       <div class="modal" id="add-card-modal">
         <div class="modal__container">
-          <button type="button" class="modal__close-btn"></button>
+          <button
+            aria-label="Close modal"
+            type="button"
+            class="modal__close-btn"
+          ></button>
           <h2 class="modal__title">New Post</h2>
           <form name="add-card" class="modal__form" id="add-card">
             <label for="add-card-link" class="modal__label">
@@ -117,6 +122,17 @@
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
+      </div>
+    </div>
+    <div class="modal" id="preview-modal">
+      <div class="modal__container modal__container_type_preview">
+        <button
+          aria-label="Close modal"
+          type="button"
+          class="modal__close-btn modal__close-btn_type_preview"
+        ></button>
+        <img src="" alt="" class="modal__image" />
+        <p class="modal__caption"></p>
       </div>
     </div>
     <script src="./scripts/index.js" defer></script>
