@@ -91,6 +91,11 @@
   padding: 18px 32px;
   border: none;
   border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.modal__submit-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
