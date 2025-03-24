@@ -144,7 +144,7 @@
   font-size: 20px;
   line-height: 1.2;
   display: inline-block;
-  align-self: ;
+  align-self: flex-start;
 }
 
 @media screen and (max-width: 627px) {
@@ -191,6 +191,5 @@
 
   .modal__caption {
     font-size: 16px;
-    align-self: flex-start;
   }
 }
