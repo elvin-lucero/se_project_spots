@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 1;
 }
 
 .modal__close-btn {
@@ -61,8 +62,8 @@
 
 .modal__close-btn_type_preview {
   background-image: url(../images/close-icon-modal-preview.svg);
-  top: 16px;
-  right: 16px;
+  top: 0px;
+  right: -52.5px;
   opacity: 1;
 }
 
@@ -180,13 +181,13 @@
   }
 
   .modal__container_type_preview {
-    padding: 8px;
+    padding: 0px;
     width: auto;
   }
 
   .modal__close-btn_type_preview {
-    top: -40px;
-    right: 12px;
+    top: -48px;
+    right: 0px;
   }
 
   .modal__caption {
