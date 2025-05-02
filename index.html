@@ -51,6 +51,7 @@
                 <div class="card__content">
                   <h2 class="card__title"></h2>
                   <button type="button" class="card__like-btn"></button>
+                  <button type="button" class="card__like-btn"></button>
                 </div>
               </li>
             </template>
@@ -73,6 +74,9 @@
                 name="name"
                 class="modal__input"
                 placeholder="Type your name"
+                required
+                minlength="2"
+                maxlength="40"
               />
             </label>
             <label for="profile-description-input" class="modal__label">
@@ -83,6 +87,9 @@
                 name="description"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
+                minlength="2"
+                maxlength="200"
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
@@ -101,6 +108,7 @@
           <form name="add-card" class="modal__form" id="add-card">
             <label for="add-card-link" class="modal__label">
               Image link
+              <!-- Make sure the input section is valid -->
               <input
                 id="add-card-link"
                 type="url"
@@ -117,6 +125,9 @@
                 name="caption"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
+                minlength="2"
+                maxlength="30"
               />
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
