@@ -78,6 +78,7 @@
                 minlength="2"
                 maxlength="40"
               />
+              <span class="modal__error">ERROR!!!</span>
             </label>
             <label for="profile-description-input" class="modal__label">
               Description
@@ -91,6 +92,7 @@
                 minlength="2"
                 maxlength="200"
               />
+              <span class="modal__error">ERROR!!!</span>
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
@@ -115,7 +117,9 @@
                 name="link"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
+              <span class="modal__error">ERROR!!!</span>
             </label>
             <label for="add-card-caption" class="modal__label">
               Caption
@@ -129,6 +133,7 @@
                 minlength="2"
                 maxlength="30"
               />
+              <span class="modal__error">ERROR!!!</span>
             </label>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
