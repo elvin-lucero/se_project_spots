@@ -94,6 +94,7 @@
 .modal__input {
   max-width: 630px;
   padding: 16px 12px;
+  padding: 16px 12px;
   border: 1px solid #21212140;
   border-radius: 8px;
   font-family: "Poppins", sans-serif;
@@ -156,6 +157,11 @@
   line-height: 110.00000000000001%;
   font-weight: 500;
   letter-spacing: 0%;
+}
+
+.modal__input_type_error {
+  border: 1px solid #ff0000;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 627px) {

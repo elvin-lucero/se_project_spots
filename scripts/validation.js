@@ -5,6 +5,8 @@ const showInputError = (formElement, inputElement, errorMessage) => {
   if (errorElement) {
     errorElement.textContent = errorMessage; // Set the error message
     errorElement.classList.add("modal__error_visible"); // Optionally add a visible class
+    // You can also add a class to the input element to indicate an error
+    inputElement.classList.add("modal__input_type_error");
   } else {
     console.error(
       `Error element with class "${inputElement.id}-error" not found.`
@@ -19,6 +21,8 @@ const hideInputError = (formElement, inputElement) => {
   if (errorElement) {
     errorElement.textContent = ""; // Clear the error message
     errorElement.classList.remove("modal__error_visible"); // Optionally remove the visible class
+    // Remove the error class from the input element
+    inputElement.classList.remove("modal__input_type_error");
   }
 };
 
