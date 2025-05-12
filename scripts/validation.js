@@ -34,6 +34,18 @@ const checkInputValidity = (formElement, inputElement) => {
   }
 };
 
+const hasInvalidInput = (inputList) => {
+  return inputList.some((inputElement) => {
+    return !inputElement.validity.valid;
+  });
+};
+
+const toggleButtonState = (inputList, buttonElement) => {
+  console.log(hasInvalidInput(inputList));
+  //if (hasInvalidInput(inputList)) {
+  //}
+};
+
 const setEventListeners = (formElement) => {
   const inputList = Array.from(formElement.querySelectorAll(".modal__input"));
   const buttonElement = formElement.querySelector(".modal__button");
@@ -44,7 +56,7 @@ const setEventListeners = (formElement) => {
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", () => {
       checkInputValidity(formElement, inputElement);
-      //toggleButtonState(inputList, buttonElement);
+      toggleButtonState(inputList, buttonElement);
     });
   });
 };
