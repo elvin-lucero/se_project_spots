@@ -93,6 +93,12 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  if (modal === cardModal) {
+    cardModalForm.reset();
+  }
+  if (modal === editModal) {
+    editFormElement.reset();
+  }
 }
 
 // Edit Form Submit Handler for editing profile information.
@@ -124,6 +130,7 @@ function handleAddCardFormSubmit(evt) {
 editModalBtn.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
+  resetValidation(editFormElement, editModal.querySelectorAll(".modal__input"));
   openModal(editModal);
 });
 
@@ -132,6 +139,7 @@ editModalCloseBtn.addEventListener("click", () => {
 });
 
 cardModalBtn.addEventListener("click", () => {
+  resetValidation(cardModalForm, cardModal.querySelectorAll(".modal__input"));
   openModal(cardModal);
 });
 

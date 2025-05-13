@@ -108,7 +108,7 @@
   border-color: #212121;
 }
 
-.modal__submit-btn {
+.modal__button {
   background-color: #000;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -122,9 +122,16 @@
   transition: background 0.3s;
 }
 
-.modal__submit-btn:hover {
+.modal__button:hover {
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+}
+
+.modal__button_disabled {
+  background-color: #212121;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .modal__image {
@@ -187,7 +194,7 @@
     right: 12px;
   }
 
-  .modal__submit-btn {
+  .modal__button {
     width: 100%;
   }
 
