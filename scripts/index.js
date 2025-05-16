@@ -89,15 +89,33 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscClose);
+  modal.addEventListener("mousedown", handleOverlayClick);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
-  if (modal === cardModal) {
-    cardModalForm.reset();
-  }
+  document.removeEventListener("keydown", handleEscClose);
+  modal.removeEventListener("mousedown", handleOverlayClick);
   if (modal === editModal) {
-    editFormElement.reset();
+    editModal.reset(); // Reset the Edit Profile form when closing the modal
+  } else if (modal === cardModal) {
+    cardModalForm.reset(); // Reset the New Post (Card Modal) form when closing the modal
+  }
+}
+
+function handleEscClose(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_opened");
+    if (openedModal) {
+      closeModal(openedModal);
+    }
+  }
+}
+
+function handleOverlayClick(evt) {
+  if (evt.target.classList.contains("modal")) {
+    closeModal(evt.target);
   }
 }
 
@@ -125,6 +143,14 @@ function handleAddCardFormSubmit(evt) {
 
   closeModal(cardModal);
   cardModalForm.reset();
+
+  const inputs = Array.from(
+    cardModalForm.querySelectorAll(settings.inputSelector)
+  );
+  const submitButton = cardModalForm.querySelector(
+    settings.submitButtonSelector
+  );
+  toggleButtonState(inputs, submitButton);
 }
 
 editModalBtn.addEventListener("click", () => {
