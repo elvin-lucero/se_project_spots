@@ -163,6 +163,11 @@ cardModalBtn.addEventListener("click", () => {
 });
 
 cardModalCloseBtn.addEventListener("click", () => {
+  cardModalForm.reset(); // Reset the form
+  resetValidation(
+    cardModalForm,
+    cardModal.querySelectorAll(".modal__input")
+  );
   closeModal(cardModal);
 });
 
